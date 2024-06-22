@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import {
 	StyledAdviceNumber,
+	StyledButton,
 	StyledCard,
 	StyledContainerApp,
 	StyledText
@@ -21,7 +22,9 @@ const ContainerApp = () => {
 				<StyledCard>
 					<StyledAdviceNumber>ADVICE #{data.slip.id}</StyledAdviceNumber>
 					<StyledText>&quot;{data.slip.advice}&quot;</StyledText>
-					<button onClick={() => setClick(!click)}>Advice</button>
+					<StyledButton onClick={() => setClick(!click)}>
+						<img src='/dice-button.svg' alt='dice' />
+					</StyledButton>
 				</StyledCard>
 			</StyledContainerApp>
 		);

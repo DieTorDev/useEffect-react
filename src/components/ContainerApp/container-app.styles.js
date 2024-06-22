@@ -19,7 +19,8 @@ const StyledCard = styled.article`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	position: relative;
 `;
 
 const StyledAdviceNumber = styled.h3`
@@ -28,15 +29,45 @@ const StyledAdviceNumber = styled.h3`
 	font-weight: bolder;
 	letter-spacing: 3.46px;
 	color: #53ffaa;
+	height: 20%;
+	display: flex;
+	align-items: center;
 `;
 
 const StyledText = styled.p`
 	font-family: 'Manrope', sans-serif;
-	font-size: 24px;
+	font-size: 34px;
 	font-weight: bolder;
 	color: #cee3e9;
 	text-align: center;
 	margin-top: 0;
+	height: 80%;
+	display: flex;
+	align-items: center;
 `;
 
-export { StyledContainerApp, StyledCard, StyledAdviceNumber, StyledText };
+const StyledButton = styled.button`
+	background-color: #53ffaa;
+	border: none;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: -40px;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0px 0px 10px 0px #53ffaa;
+	}
+`;
+
+export {
+	StyledContainerApp,
+	StyledCard,
+	StyledAdviceNumber,
+	StyledText,
+	StyledButton
+};
